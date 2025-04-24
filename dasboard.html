@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Gerenciador de Frota</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+   
+
+    <div class="dashboard-container">
+        <h1>Dashboard da Frota</h1>
+
+        <div class="charts-box">
+            <a href="cadastros.html" class="chart-link">
+            <div class="chart-card">
+                <canvas id="cadastroChart"></canvas>
+                <p>Cadastros</p>
+            </div>
+            <a href="frotatotal.html" class="chart-link">
+            <div class="chart-card">
+                <canvas id="frotaChart"></canvas>
+                <p>Frota Total</p>
+            </div>
+            <a href="manutencao.html" class="chart-link">
+            <div class="chart-card">
+                <canvas id="manutencaoChart"></canvas>
+                <p>Em Manutenção</p>
+            </div>
+            <a href="motoristas.html" class="chart-link">
+            <div class="chart-card">
+                <canvas id="motoristasChart"></canvas>
+                <p>Motoristas</p>
+            </div>
+            <a href="cheklist.html" class="chart-link">
+            <div class="chart-card">
+                <canvas id="checklistChart"></canvas>
+                <p>Checklists</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
